@@ -73,10 +73,76 @@ html{
     color: yellow;
  }
 
- .subtitle {
-    font-size: 18px;
-    color: white;
-    max-width: 50%;
-    text-align: center;
-    margin-top: 10px;
+#sobre{
+   margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+#sobre h1, h2{
+   font-size: 40px;
+}
+
+#sobre span{
+   font-size: 30px;
+}
+
+#sobre img{
+   width: 300px;
+   
+}
+#sobre img:hover{
+   transform: scale(0.9);
+   transition: 0.4s ease;
+}
+
+#sobre h2{
+   margin-top: 10%;
+}
+
+#sobre button{
+   cursor: pointer;
+   font-size: 25px;
+   border: none;
+   background-color: rgb(120, 0, 255);
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   border-radius: 20px;
+   width: 10%;
+   margin-top: 30px;
+   margin-bottom: 10%;
+   height: 2.5rem;
+}
+
+#sobre button:hover{
+   color: rgb(255, 246, 0);
+   transition: 0.4s ease;
+   
+}
+
+.rodape{
+   display: flex;
+   justify-content: space-between;
+}
+
+.rodape span{
+   margin: 20px;
+   font-size: 25px;
+}
+
+.redes-sociais{
+   display: flex;
+   justify-content: end;
+   margin-right: 20%;
+}
+
+.empresa{
+   display: flex;
+   margin-left: 20%;
+}
+
+.botao{
+   display: flex;
+   /* flex-direction: column; */
 }
