@@ -1,3 +1,8 @@
+:root{
+   --cor-hover: rgb(255, 246, 0);
+   --transition-hover: 0.4s ease;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -79,7 +84,7 @@ html{
     background-color: rgb(120, 0, 255);
     border-radius: 10%;
     margin-bottom: 10%;
-    height: 45vh;
+    height: 55vh;
  }
 
  .container-form form input, label, button{
@@ -133,3 +138,30 @@ html{
     transition: 0.4s ease;
 }
 
+.container-form p{
+   font-size: 20px;
+  
+}
+.container-form p a{
+   color: rgb(255,255,255);
+   text-decoration: none;
+}
+
+.container-form p a:hover{
+   color: var(--cor-hover);
+   transition: var(--transition-hover);
+}
+.redes-sociais{
+   margin: 20px;
+}
+
+.redes-sociais i{
+   margin: 20px;
+   font-size: 40px;
+   color: black;
+}
+
+.redes-sociais i:hover{
+   color: var(--cor-hover);
+   transition: var(--transition-hover);
+}
