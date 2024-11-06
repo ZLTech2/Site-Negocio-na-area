@@ -24,14 +24,14 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
-  /* border: solid red 1px; */
   background-color: var(--cor-roxa);
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
-  
+  text-align: left;
+  max-width: 30%;
 }
 
 /* Declare heights because of positioning of img element */
@@ -45,12 +45,15 @@ body {
 }
 
 .btn-primary:hover{
-  color: var(--cor-roxa);
-  background-color:rgb(255,255, 255);
+  color: var(--cor-amarela);
+  /* background-color:rgb(255, 255, 255); */
   transition: 0.4s ease;
   border: none;
 }
 
+.text-end{
+  text-align: left !important;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -80,6 +83,8 @@ body {
 .featurette-heading {
   letter-spacing: -.05rem;
 }
+
+
 
 /* rtl:end:remove */
 
