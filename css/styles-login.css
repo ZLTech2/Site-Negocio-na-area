@@ -1,6 +1,8 @@
 :root{
    --cor-hover: rgb(255, 246, 0);
    --transition-hover: 0.4s ease;
+   --cor-roxa: rgb(120, 0, 255);
+   --cor-amarela: rgb(255, 246, 0);
 }
 
 *{
@@ -18,8 +20,10 @@ html{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* background-color: rgb(194, 194, 194); */
     background-image: url(../assets/images/fundo.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
  }
 
  header{
@@ -84,12 +88,16 @@ html{
     background-color: rgb(120, 0, 255);
     border-radius: 10%;
     margin-bottom: 10%;
-    height: 55vh;
+    height: 65vh;
  }
+
+ .container-form form input:focus {
+   outline: 2px solid var(--cor-amarela);
+   box-shadow: 0 0 5px var(--cor-amarela); 
+}
 
  .container-form form input, label, button{
     margin-top: 20px;
-    
     text-transform: uppercase;
  }
 
@@ -113,7 +121,7 @@ html{
     border: none;
     width: 40%;
     display: flex;
-    height: 2.5rem;
+    height: 4.5rem;
  }
 
 .container-form form button{
@@ -128,13 +136,13 @@ html{
     font-weight: bold;
     margin-top:50px;
     border-radius: 10px;
-    height: 2.5rem;
+    height: 4.5rem;
     margin-bottom: 10%;
    
 }
 
 .container-form form button:hover{
-    color: rgb(120, 0, 255);
+    background-color: rgb(120, 0, 255);
     transition: 0.4s ease;
 }
 
@@ -151,6 +159,7 @@ html{
    color: var(--cor-hover);
    transition: var(--transition-hover);
 }
+
 .redes-sociais{
    margin: 20px;
 }
