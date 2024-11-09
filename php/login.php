@@ -13,13 +13,13 @@
         <nav>
             <ul class="nav-list">
                 <div class="logo">
-                   <a href="../site.html"> <img src="../assets/images/logo rd (1).png" alt=""></a>
+                    <img src="../assets/images/logo rd (1).png" alt="">
                 </div>
                 <li><a href="../index.html">Personalize</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="https://zltech2.github.io/Site-ZL-Tech/">ZL Tech</a></li>
-                <li> <a href="./cadastro.php">Cadastrar</a></li>
-                <li><a href="./login.php">Entrar</a></li>
+                <li> <a href="../php/cadastro.html">Cadastrar</a></li>
+                <li><a href="../php/login.html">Entrar</a></li>
             </ul>
             </div>
         </nav>
