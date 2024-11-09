@@ -12,13 +12,13 @@
         <nav>
             <ul class="nav-list">
                 <div class="logo">
-                    <img src="../assets/images/logo rd (1).png" alt="">
+                    <a href="../site.html"> <img src="../assets/images/logo rd (1).png" alt=""></a>
                 </div>
                 <li><a href="../index.html">Personalize</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="https://zltech2.github.io/Site-ZL-Tech/">ZL Tech</a></li>
-                <li> <a href="./cadastro.html">Cadastrar</a></li>
-                <li><a href="/php/login.html">Entrar</a></li>
+                <li> <a href="./cadastro.php">Cadastrar</a></li>
+                <li><a href="./login.php">Entrar</a></li>
             </ul>
             </div>
         </nav>
@@ -27,18 +27,20 @@
     <main>
         <div class="container-form">
             <h1>Negócio na Área</h1>
-            <form action="" method="post">
+            <?php ?>
+            <form action="./cadastro.act.php" method="post">
                 <label for="email"> Email:</label>
-                    <input type="email" placeholder="Digite seu email" required>
+                    <input type="email" name="email" placeholder="Digite seu email" required>
                 <label for="empresa">Nome da empresa:</label>
-                    <input type="text" placeholder="Digite o nome da sua empresa" required>
+                    <input type="text" name="nome_empresa" placeholder="Digite o nome da sua empresa" required>
                 <label for="cnpj">CNPJ:</label>
-                    <input type="text" placeholder="Digite o CNPJ da empresa" required>
+                    <input type="text" name="cnpj" placeholder="Digite o CNPJ da empresa" required>
                 <label for="senha">Senha:</label>
-                    <input type="password" placeholder="Digite sua senha" required>
+                    <input type="password" name="senha" placeholder="Digite sua senha" required>
                 <label for="confirm-senha">Confirmação de senha:</label>
-                    <input type="password" name="" id="" placeholder="Confirme sua senha" required>
+                    <input type="password" name="confirmar_senha" id="" placeholder="Confirme sua senha" required>
                 <button type="submit">Cadastre-se</button>
+                <div id="msg"></div>
             </form>
         </div>
 
