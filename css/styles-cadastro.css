@@ -29,6 +29,12 @@ html{
     color: rgb(255, 255, 255);
  }
 
+ #msg{
+   font-size: 30px;
+   color: var(--cor-amarela);
+   text-transform: uppercase;
+ }
+ 
  .nav-list{
     display: flex;
     align-items: center;

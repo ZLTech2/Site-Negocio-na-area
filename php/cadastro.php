@@ -28,7 +28,7 @@
         <div class="container-form">
             <h1>Negócio na Área</h1>
             <?php ?>
-            <form action="./cadastro.act.php" method="post">
+            <form action="./cadastro.act.php" method="post" id="contatoForm">
                 <label for="email"> Email:</label>
                     <input type="email" name="email" placeholder="Digite seu email" required>
                 <label for="empresa">Nome da empresa:</label>
