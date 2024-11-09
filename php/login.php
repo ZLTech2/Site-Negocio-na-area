@@ -18,8 +18,8 @@
                 <li><a href="../index.html">Personalize</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="https://zltech2.github.io/Site-ZL-Tech/">ZL Tech</a></li>
-                <li> <a href="../php/cadastro.html">Cadastrar</a></li>
-                <li><a href="../php/login.html">Entrar</a></li>
+                <li> <a href="../php/cadastro.php">Cadastrar</a></li>
+                <li><a href="../php/login.php">Entrar</a></li>
             </ul>
             </div>
         </nav>
@@ -28,6 +28,7 @@
     <main>
         <div class="container-form">
             <h1>Negócio na Área</h1>
+            <?php ?>
             <form action="" method="post">
                 <label for="email"> Email:</label>
                     <input type="text" placeholder="Digite seu email" required>

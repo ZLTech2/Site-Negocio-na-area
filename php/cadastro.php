@@ -27,6 +27,7 @@
     <main>
         <div class="container-form">
             <h1>Negócio na Área</h1>
+            <?php ?>
             <form action="" method="post">
                 <label for="email"> Email:</label>
                     <input type="email" placeholder="Digite seu email" required>
