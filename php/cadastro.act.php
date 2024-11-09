@@ -4,6 +4,7 @@ require ('connect.php');
 extract($_POST);
 
 $senha = md5($senha);
+$confirmar_senha = md5($confirmar_senha);
 $response = [];
 
 if(mysqli_query($con,"INSERT INTO clientes(email, nome_empresa, cnpj, senha, confirmar_senha) VALUES ('$email','$nome_empresa','$cnpj','$senha','$confirmar_senha')")){

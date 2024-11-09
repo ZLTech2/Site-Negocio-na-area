@@ -40,6 +40,7 @@
                 <label for="confirm-senha">Confirmação de senha:</label>
                     <input type="password" name="confirmar_senha" id="" placeholder="Confirme sua senha" required>
                 <button type="submit">Cadastre-se</button>
+                <a href="./login.php">Entrar</a>
                 <div id="msg"></div>
             </form>
         </div>
