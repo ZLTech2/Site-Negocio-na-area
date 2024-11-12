@@ -96,8 +96,7 @@ html{
    box-shadow: 0 0 5px var(--cor-amarela); 
 }
 
- .container-form form input, label, button{
-    margin-top: 20px;
+ .container-form form label, button{
     text-transform: uppercase;
  }
 
@@ -105,7 +104,7 @@ html{
     color: rgb(255, 246, 0);
     /* border: solid red 1px;  */
     width:50%; 
-
+    margin-top: 20px;
  }
 
 .container-form label, button{
@@ -114,6 +113,7 @@ html{
 
 .container-form form input, button{
     box-shadow: 3px 2px 5px 1px;
+    margin-top: 20px;
     
 }
  .container-form form input{
@@ -122,6 +122,10 @@ html{
     width: 50%;
     display: flex;
     height: 6.5rem;
+ }
+
+ .container-form form input::placeholder{
+   text-transform: uppercase;
  }
 
 .container-form form button{

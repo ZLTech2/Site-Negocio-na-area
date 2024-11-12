@@ -121,6 +121,10 @@ html{
    box-shadow: 0 0 5px var(--cor-amarela); 
 }
 
+.container-form form input::placeholder{
+   text-transform: uppercase;
+}
+
 /* .container-form form input[type="email"]{
    border: solid red 5px;
 } */
