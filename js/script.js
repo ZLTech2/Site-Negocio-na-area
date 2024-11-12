@@ -1,22 +1,31 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contatoForm');
 
-    const texts = [
-        '<span class="color-word">Crie um site</span> para sua loja com nosso <span class="color-word">layout</span> pré definido',
-        '<span class="color-word">Disponível em</span> todos os dispositivos, como<span class="color-word"> celular e desktop</span>',
-        '<span class="color-word">Melhore a divulgação</span> da sua loja com nosso <span class="color-word">suporte</span> e <span class="color-word"> rede da comunidade</span>'
-    ];
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Previne o envio tradicional do formulário
 
-    const images = [
-        './assets/images/logo_rd_1.png',
-        './assets/images/logo_rd_2.png',
-        './assets/images/logo_rd_3.png'
-    ];
+        const formData = new FormData(form);
 
-    let currentIndex = 0;
+        fetch('cadastro.act.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json()) // Espera a resposta em formato JSON
+        .then(data => {
+            const msgElement = document.getElementById('msg');
+            msgElement.innerText = data.msg; // Mostra a mensagem
 
-    function changeSlideshow() {
-        currentIndex = (currentIndex + 1) % texts.length;
-        document.getElementById('slideshow-text').innerHTML = texts[currentIndex];
-        document.getElementById('slideshow-image').src = images[currentIndex];
-    }
+            // Adiciona a classe de feedback
+            msgElement.className = data.status === 'success' ? 'success' : 'error';
 
-    setInterval(changeSlideshow, 5000); // Muda a cada 3 segundos
+            if (data.status === 'success') {
+                form.reset(); // Limpa o formulário em caso de sucesso
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            const msgElement = document.getElementById('msg');
+            msgElement.innerText = 'Ocorreu um erro ao enviar o formulário';
+        });
+    });
+});

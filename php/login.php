@@ -18,8 +18,8 @@
                 <li><a href="../index.html">Personalize</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="https://zltech2.github.io/Site-ZL-Tech/">ZL Tech</a></li>
-                <li> <a href="../php/cadastro.php">Cadastrar</a></li>
-                <li><a href="../php/login.php">Entrar</a></li>
+                <li> <a href="./cadastro.php">Cadastrar</a></li>
+                <li><a href="./login.php">Entrar</a></li>
             </ul>
             </div>
         </nav>
@@ -28,14 +28,13 @@
     <main>
         <div class="container-form">
             <h1>Negócio na Área</h1>
-            <?php ?>
             <form action="" method="post">
                 <label for="email"> Email:</label>
                     <input type="text" placeholder="Digite seu email" required>
                 <label for="senha">Senha:</label>
                     <input type="password" placeholder="Digite sua senha" required>
                 <button type="submit">Entrar</button>
-                <p>Não possui conta? <a href="#">Cadastre-se</a></p>
+                <p>Não possui conta? <a href="./cadastro.php">Cadastre-se</a></p>
                 <div class="redes-sociais">
                     <span><a href="#"><i class="fa-brands fa-google"></a></i></span>
                     <span><a href="#"><i class="fa-brands fa-facebook"></a></i></span>
