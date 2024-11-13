@@ -30,7 +30,7 @@ html{
  }
 
  #msg{
-   font-size: 30px;
+   font-size: 20px;
    color: var(--cor-amarela);
    text-transform: uppercase;
  }

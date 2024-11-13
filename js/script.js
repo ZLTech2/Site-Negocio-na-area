@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contatoForm');
 
+    function validarSenha(event) {
+        let senha = document.getElementById('senha').value.trim();
+        let confirmar_senha = document.getElementById('confirmar_senha').value.trim();
+
+        if (senha !== confirmar_senha) {
+            alert('As senhas não são iguais');
+            event.preventDefault(); // Impede o envio do formulário
+            return false;
+        }
+        return true;
+    }
+
+    form.addEventListener('submit',function(event){
+        if(!validarSenha(event)){
+            return;
+        }
+        event.preventDefault();
+    })
+
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Previne o envio tradicional do formulário
 
@@ -29,3 +48,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+

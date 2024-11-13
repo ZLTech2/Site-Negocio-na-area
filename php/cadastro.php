@@ -36,9 +36,9 @@
                 <label for="cnpj">CNPJ:</label>
                     <input type="text" name="cnpj" placeholder="Digite o CNPJ da empresa" required>
                 <label for="senha">Senha:</label>
-                    <input type="password" name="senha" placeholder="Digite sua senha" required>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
                 <label for="confirm-senha">Confirmação de senha:</label>
-                    <input type="password" name="confirmar_senha" id="" placeholder="Confirme sua senha" required>
+                    <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme sua senha" required>
                 <button type="submit">Cadastre-se</button>
                 <a href="./login.php">Entrar</a>
                 <div id="msg"></div>
