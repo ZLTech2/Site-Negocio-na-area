@@ -6,6 +6,8 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/styles-cadastro.css">
     <link rel="shortcut icon" href="../assets/images/logo rd (1).png" type="image/x-icon">
+    
+
 </head>
 <body>
     <header>
@@ -28,13 +30,13 @@
         <div class="container-form">
             <h1>Negócio na Área</h1>
             <?php ?>
-            <form action="./cadastro.act.php" method="post" id="contatoForm">
+            <form action="./cadastro.act.php" method="post" id="contatoForm" novalidate>
                 <label for="email"> Email:</label>
                     <input type="email" name="email" placeholder="Digite seu email" required>
                 <label for="empresa">Nome da empresa:</label>
                     <input type="text" name="nome_empresa" placeholder="Digite o nome da sua empresa" required>
                 <label for="cnpj">CNPJ:</label>
-                    <input type="text" name="cnpj" placeholder="Digite o CNPJ da empresa" required>
+                    <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ da empresa" required>
                 <label for="senha">Senha:</label>
                     <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
                 <label for="confirm-senha">Confirmação de senha:</label>
@@ -49,6 +51,8 @@
             <p>redes sociais</p>
         </footer> -->
     </main>
-    <script src="../js/script.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask.min.js"></script>  Versão 4.x.x -->
+    <script src="../js/script.js"></script>
+    
 </body>
 </html>

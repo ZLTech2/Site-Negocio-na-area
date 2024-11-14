@@ -1,40 +1,51 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contatoForm');
+    const senha = document.getElementById('senha');
+    const confirmarSenha = document.getElementById('confirmar_senha');
+    const msgElement = document.getElementById('msg');
+    const cnpj = document.getElementById('cnpj');
 
-    function validarSenha(event) {
-        let senha = document.getElementById('senha').value.trim();
-        let confirmar_senha = document.getElementById('confirmar_senha').value.trim();
+    // Aplique a máscara no CNPJ
 
-        if (senha !== confirmar_senha) {
-            alert('As senhas não são iguais');
-            event.preventDefault(); // Impede o envio do formulário
-            return false;
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Impede o envio do formulário inicialmente
+
+        function verificarSenhas() {
+            // Validação de senha
+            const senhaValue = senha.value.trim();
+            const confirmarSenhaValue = confirmarSenha.value.trim();
+
+            msgElement.style.display = 'none';
+            msgElement.className = 'msg';
+            if (senhaValue === "" || confirmarSenhaValue === "") {
+                return;
+            }
+
+            if (senhaValue !== confirmarSenhaValue) {
+                msgElement.innerText = 'As senhas não são iguais';
+                msgElement.classList.add('erro');
+                msgElement.style.display = 'block';
+                return false; // Sai da função se as senhas forem diferentes
+            } else {
+                msgElement.innerText = 'As senhas são iguais.';
+                msgElement.classList.add('sucesso');
+                msgElement.style.display = 'block'; // Exibe a mensagem de sucesso
+            }
         }
-        return true;
-    }
 
-    form.addEventListener('submit',function(event){
-        if(!validarSenha(event)){
-            return;
-        }
-        event.preventDefault();
-    })
+        senha.addEventListener('input', verificarSenhas);
+        confirmarSenha.addEventListener('input', verificarSenhas);
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Previne o envio tradicional do formulário
-
+        // Criação do FormData e envio via fetch
         const formData = new FormData(form);
 
         fetch('cadastro.act.php', {
             method: 'POST',
             body: formData
         })
-        .then(response => response.json()) // Espera a resposta em formato JSON
+        .then(response => response.json())
         .then(data => {
-            const msgElement = document.getElementById('msg');
-            msgElement.innerText = data.msg; // Mostra a mensagem
-
-            // Adiciona a classe de feedback
+            msgElement.innerText = data.msg;
             msgElement.className = data.status === 'success' ? 'success' : 'error';
 
             if (data.status === 'success') {
@@ -43,10 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Erro:', error);
-            const msgElement = document.getElementById('msg');
             msgElement.innerText = 'Ocorreu um erro ao enviar o formulário';
         });
     });
 });
-
-
