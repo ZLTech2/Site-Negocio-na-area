@@ -123,6 +123,7 @@ html{
 
 .container-form form input::placeholder{
    text-transform: uppercase;
+   font-size: 10px;
 }
 
 /* .container-form form input[type="email"]{
