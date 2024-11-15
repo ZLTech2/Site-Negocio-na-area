@@ -26,7 +26,7 @@ $stmt = $con->prepare("INSERT INTO clientes (nome_empresa,email, cnpj, senha) VA
 $stmt->bind_param("ssss", $nome_empresa, $email, $cnpj, $hash);
 
 if ($stmt->execute()) {
-    $response = ["status" => "success", "msg" => "Conta cadastrada"];
+    $response = ["status" => "success", "msg" => "Conta cadastrada, clique no botao entrar para logar"];
 } else {
     $response = ["status" => "error", "msg" => "Ocorreu um erro ao cadastrar: " . $stmt->error];
 }

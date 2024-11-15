@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header{
+    background-color: gray;
+    /* position: relative; */
+
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+ }
+
+ .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+ }
+
+ .nav-list li{
+    font-size: 20px;
+    list-style: none;
+    text-transform: uppercase;
+ }
+
+ .nav-list li a{
+    text-decoration: none;
+    color: black;
+ }

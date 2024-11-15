@@ -3,10 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const senha = document.getElementById('senha');
     const confirmarSenha = document.getElementById('confirmar_senha');
     const msgElement = document.getElementById('msg');
-    const cnpj = document.getElementById('cnpj');
 
-    // Aplique a máscara no CNPJ
-
+    function mascaraCNPJ(cnpj){
+        cnpj = cnpj.replace(/\D/g,'');
+        cnpj = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
+        return cnpj;
+    }
+    const cnpj = document.getElementById('cnpj')
+    cnpj.addEventListener('input',function(){
+        this.value = mascaraCNPJ(this.value);
+    })
+    
     form.addEventListener('submit', (event) => {
         event.preventDefault(); // Impede o envio do formulário inicialmente
 

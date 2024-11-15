@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/styles-dashboard.css">
 </head>
 <body>
-    <h1>Essa vai ser a tela do dashboard</h1>
-    <span>Ainda não tem nada nela!</span>
-    <a href="./logout.php">Sair</a>
+    <header>
+        <nav>
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="../assets/images/logo rd (1).png" alt="">
+            </div>
+            <li><a href="./logout.php">Sair</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+
 </body>
 </html>

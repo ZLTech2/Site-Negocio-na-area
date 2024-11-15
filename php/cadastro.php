@@ -36,7 +36,7 @@
                 <label for="email"> Email:</label>
                     <input type="email" name="email" placeholder="Digite seu email" required>
                 <label for="cnpj">CNPJ:</label>
-                    <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ da empresa" required>
+                    <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ sem pontos ou hífens" maxlength="18" required>
                 <label for="senha">Senha:</label>
                     <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
                 <label for="confirm-senha">Confirmação de senha:</label>
@@ -51,7 +51,6 @@
             <p>redes sociais</p>
         </footer> -->
     </main>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask.min.js"></script>  Versão 4.x.x -->
     <script src="../js/script.js"></script>
     
 </body>
