@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const senha = document.getElementById('senha');
     const confirmarSenha = document.getElementById('confirmar_senha');
     const msgElement = document.getElementById('msg');
-    // const cnpj = document.getElementById('cnpj');
+    const cnpj = document.getElementById('cnpj');
+
+    // Aplique a máscara no CNPJ
 
     form.addEventListener('submit', (event) => {
         event.preventDefault(); // Impede o envio do formulário inicialmente

@@ -1,5 +1,7 @@
 <?php
 require ('connect.php');
+
+// Verifica se o campo 'senha' foi enviado
 if (empty($_POST['senha'])) {
     die(json_encode(["status" => "error", "msg" => "A senha não pode estar vazia."]));
 }
@@ -15,13 +17,13 @@ $email = $_POST['email'];
 $nome_empresa = $_POST['nome_empresa'];
 $cnpj = $_POST['cnpj'];
 
-
+// Gera o hash da senha
 $hash = password_hash($senha, PASSWORD_ARGON2ID);
 $response = [];
 
-
-$stmt = $con->prepare("INSERT INTO clientes (email, nome_empresa, cnpj, senha) VALUES (?, ?, ?, ?)");
-$stmt->bind_param("ssss", $email, $nome_empresa, $cnpj, $hash);
+// Inserção no banco de dados
+$stmt = $con->prepare("INSERT INTO clientes (nome_empresa,email, cnpj, senha) VALUES (?, ?, ?, ?)");
+$stmt->bind_param("ssss", $nome_empresa, $email, $cnpj, $hash);
 
 if ($stmt->execute()) {
     $response = ["status" => "success", "msg" => "Conta cadastrada"];

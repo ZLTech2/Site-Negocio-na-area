@@ -31,10 +31,10 @@
             <h1>Negócio na Área</h1>
             <?php ?>
             <form action="./cadastro.act.php" method="post" id="contatoForm" novalidate>
-                <label for="email"> Email:</label>
-                    <input type="email" name="email" placeholder="Digite seu email" required>
                 <label for="empresa">Nome da empresa:</label>
                     <input type="text" name="nome_empresa" placeholder="Digite o nome da sua empresa" required>
+                <label for="email"> Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu email" required>
                 <label for="cnpj">CNPJ:</label>
                     <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ da empresa" required>
                 <label for="senha">Senha:</label>

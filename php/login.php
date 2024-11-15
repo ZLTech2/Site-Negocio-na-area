@@ -1,3 +1,17 @@
+<?php
+    session_start();
+    if (isset($_SESSION["logado"]) && $_SESSION["logado"] ===true) {
+        header("Location: dashboard.php");
+        exit;
+    }
+
+    $msgErro = "";
+    if (isset($_SESSION["erro"])){
+        $msgErro = $_SESSION["erro"];
+        unset($_SESSION["erro"]);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -28,11 +42,16 @@
     <main>
         <div class="container-form">
             <h1>Negócio na Área</h1>
-            <form action="" method="post">
+            <!-- Exibir mensagem de erro -->
+            
+            <form action="./login.act.php" method="post">
+            <?php if (!empty($msgErro)): ?>
+                <p style="color: rgb(255,246,0); text-transform:uppercase"><?php echo $msgErro; ?></p>
+            <?php endif; ?>
                 <label for="email"> Email:</label>
-                    <input type="text" placeholder="Digite seu email" required>
+                    <input type="text" name="email" placeholder="Digite seu email" required>
                 <label for="senha">Senha:</label>
-                    <input type="password" placeholder="Digite sua senha" required>
+                    <input type="password" name="senha" placeholder="Digite sua senha" required>
                 <button type="submit">Entrar</button>
                 <p>Não possui conta? <a href="./cadastro.php">Cadastre-se</a></p>
                 <div class="redes-sociais">
@@ -41,5 +60,6 @@
                 </div>
             </form>
         </div>
+        </main>
 </body>
 </html>
