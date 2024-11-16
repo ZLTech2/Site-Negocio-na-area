@@ -141,6 +141,13 @@ html{
    margin-right: 20%;
 }
 
+.redes-sociais a{
+   list-style-type: none;
+   color: inherit;
+}
+.redes-sociais a:hover{
+   color: #0077b5;
+}
 .empresa{
    display: flex;
    margin-left: 20%;
