@@ -14,6 +14,8 @@
                 <img src="../assets/images/logo rd (1).png" alt="">
             </div>
             <li><a href="./logout.php">Sair</a></li>
+            <li><a href="../index.php">Index</a></li>
+            <!-- gerar uma requisição de logado -->
         </ul>
         </nav>
     </header>

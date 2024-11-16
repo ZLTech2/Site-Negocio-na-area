@@ -17,6 +17,15 @@ $email = $_POST['email'];
 $nome_empresa = $_POST['nome_empresa'];
 $cnpj = $_POST['cnpj'];
 
+// if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+//     die(json_encode(['status'=> 'error','msg'=> 'O email fornecido é inválido']));
+// }
+
+// $email_dominio = substr(strrchr($email_dominio, "@"),1);
+// if(!checkdnsrr($email_dominio, "MX")){
+//     die(json_encode(array("status"=> "error","msg"=> "O domínio do email não é válido")));
+// }
+
 // Gera o hash da senha
 $hash = password_hash($senha, PASSWORD_ARGON2ID);
 $response = [];
