@@ -6,8 +6,6 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/styles-cadastro.css">
     <link rel="shortcut icon" href="../assets/images/logo rd (1).png" type="image/x-icon">
-    
-
 </head>
 <body>
     <header>

@@ -7,9 +7,10 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header{
-    background-color: gray;
-    /* position: relative; */
-
+    background-color: rgb(194, 192, 192);
+    width: 200px;
+    height: 100vh;
+    position:fixed;
 }
 
 .logo img{
@@ -17,20 +18,261 @@ header{
     height: 50px;
  }
 
- .nav-list{
+ .logo{
+    margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 15vh;
+    flex-direction: column;
+ }
+
+ .logo p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+ }
+ .nav-list{
+    display: flex;
+    flex-direction: column;
  }
 
  .nav-list li{
     font-size: 20px;
     list-style: none;
     text-transform: uppercase;
+    margin: 20px;
  }
 
+ .popup{
+   background-color: rgb(158, 158, 158);
+   display:none;    
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 30px;
+   width: 50%;
+   height: 70vh;
+   z-index: 1000;
+ }
+
+.conteudo{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 0 auto;
+   height: 90%;
+   width: 100%;
+}
+
+.conteudo form{
+   display: flex;
+   flex-direction: column;
+   /* border: solid red 1px; */
+   width: 50%;
+   align-items: center;
+}
+
+.conteudo form label{
+   font-size: 20px;
+   width: 70%;
+   margin: 10px;
+}
+
+.conteudo form input{
+   width: 70%;
+   border-radius: 30px;
+   border: none;
+   height: 2.5rem;
+}
+
+.conteudo form button{
+   border-radius: 30px;
+   width: 35%;
+   border: none;
+   margin-top: 20px;
+   font-size: 20px;
+   cursor: pointer;
+   height: 2.5rem;
+}
+.conteudo form button:hover{
+   background-color:rgb(187, 186, 186);
+   transition: 0.4s ease;
+}
+.conteudo form input::placeholder, textarea::placeholder{
+   /* border: solid red 1px; */
+   width: 80%;
+   position: relative;
+   left: 20px;
+}
+
+.conteudo form input:focus, textarea:focus{
+   outline: 2px solid #FF6D6E;
+}
+.conteudo form textarea{
+   border-radius: 20px;
+   width: 260px;
+    height: 100px;
+   border: none;
+}
  .nav-list li a{
     text-decoration: none;
     color: black;
  }
+
+ .sair{
+   /* display: flex; */
+   position: relative;
+   top: 400px;
+ }
+ .nav-list li a:hover{
+   color: white;
+ }
+
+ button{
+   cursor: pointer;
+ }
+ 
+ .teste{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* border: solid red 1px; */
+    height: 20vh;
+    background-color: #FF6D6E;
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    box-shadow: 6px 3px 5px 2px;
+ }
+
+ .teste span{
+    font-size: 50px;
+    color: white;
+    /* margin: 10px; */
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+ }
+
+ .capa{
+  height: 20vh;
+  background-color: #FFA032;;
+  /* background-image: url(../assets/images/fundo_preto.avif); */
+ }
+
+ 
+.plano{
+   background-color: rgb(94, 94, 94);
+   height: 35vh;
+   width: 100%;
+   border-radius: 30px;
+   display: flex;
+   flex-direction: column;
+}
+.plano a{
+   color: black;
+}
+
+i{
+   font-size: 40px;
+}
+.icon {
+   text-align: right;
+   margin-right: 45px;
+   margin-top: 20px;
+}
+
+.plano .imagem{
+   aspect-ratio: 1;
+   width:25%;
+   border-radius: 50%;
+   position: relative;
+   top: 80%;
+   transform: translate(-50%, -50%);
+   left: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #cecccc;
+}
+
+.botao, .botao2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: 40%;
+   flex-direction: column;
+}
+
+.botao button{
+   cursor: pointer;
+   width: 15%;
+   height: 2.5rem;
+   font-size: 15px;
+   border-radius: 20px;
+   border: none;
+   margin: 15px;
+}
+
+.botao2{
+   position: relative;
+   left: -50%;
+}
+
+.botao2 button{
+   cursor: pointer;
+   width: 100%;
+   height: 2.5rem;
+   border: none;
+   border-radius: 20px;
+}
+
+.botao button:hover{
+   background-color: #cecccc;
+}
+ .capa .imagem{
+   /* border: solid red 1px; */
+   aspect-ratio: 1;
+   width: 10%;
+   border-radius: 50%;
+   position: relative;
+   top: 50px;
+   left: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url(../assets/images/mkimports.png);
+   overflow: hidden;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border: white 1px solid;
+ }
+
+
+.capa .imagem img{
+   width: 100%;
+   height: 100%;
+   /* object-fit: cover; */
+}
+
+.posts{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: calc(100% - 200px);
+   /* border: solid red 1px; */
+   margin: 0 auto;
+   margin-top: 10%;
+   position:relative;
+   left: 50px;   
+}
+
+.posts h1{
+   text-transform: uppercase;
+}
+
+.posts img{
+   width: 200px;
+}

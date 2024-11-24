@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cnpj = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
         return cnpj;
     }
+
     const cnpj = document.getElementById('cnpj')
     cnpj.addEventListener('input',function(){
         this.value = mascaraCNPJ(this.value);
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Criação do FormData e envio via fetch
         const formData = new FormData(form);
 
-        fetch('cadastro.act.php', {
+        fetch('../php/cadastro.act.php', {
             method: 'POST',
             body: formData
         })
@@ -63,5 +64,32 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Erro:', error);
             msgElement.innerText = 'Ocorreu um erro ao enviar o formulário';
         });
+    });
+});
+
+
+document.getElementById('formContato').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var formData = new FormData(this);
+
+    fetch('./php/contato.act.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erro HTTP: ' + response.status); // Lança erro se o status não for "ok"
+        }
+        return response.json(); // Tenta converter para JSON apenas se o status for "ok"
+    })
+    .then(data => {
+        console.log(data);
+        document.getElementById('msg').innerText = data.msg;
+        this.reset();
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        document.getElementById('msg').innerText = 'Ocorreu um erro ao enviar o formulário';
     });
 });

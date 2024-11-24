@@ -27,6 +27,7 @@ html{
     align-items: center;
     justify-content: center;
     margin: 0;
+    margin-bottom: 60px;
  }
 
  .nav-list li{
@@ -79,7 +80,7 @@ html{
  }
 
 #sobre{
-   margin-top: 10%;
+   margin-top: 20%;
    display: flex;
    justify-content: center;
    flex-direction: column;
@@ -95,19 +96,17 @@ html{
 }
 
 #sobre img{
-   width: 300px;
-   
-}
-#sobre img:hover{
-   transform: scale(0.9);
-   transition: 0.4s ease;
+   margin-top: 20px;
+   width: 80%;
+   border: solid 1px;
+   box-shadow: 1px 1px 5px 2px;
 }
 
 #sobre h2{
    margin-top: 10%;
 }
 
-#sobre button{
+#sobre a{
    cursor: pointer;
    font-size: 25px;
    border: none;
@@ -118,13 +117,28 @@ html{
    margin-top: 30px;
    margin-bottom: 10%;
    height: 2.5rem;
+   text-align: center;
+   text-decoration: none;
+   color: var(--cor-amarela);
 }
 
-#sobre button:hover{
-   color: var(--cor-amarela);
+#sobre a:hover{
+   color: #ffff;
    transition: 0.4s ease;
 }
 
+#sobre .logo img{
+   width: 400px;
+   height: 400px;
+   border:none;
+   box-shadow: none;
+}
+
+
+#sobre .logo img:hover{
+   transform: scale(0.9);
+   transition: 0.4s ease;
+}
 .rodape{
    display: flex;
    justify-content: space-between;
@@ -138,7 +152,7 @@ html{
 .redes-sociais{
    display: flex;
    justify-content: end;
-   margin-right: 20%;
+   margin-right: 10%;
 }
 
 .redes-sociais a{
@@ -150,7 +164,16 @@ html{
 }
 .empresa{
    display: flex;
-   margin-left: 20%;
+   margin-left: 10%;
+}
+
+.empresa a{
+   text-decoration: none;
+   color: inherit;
+}
+
+.empresa a:hover{
+   color: #0077b5;
 }
 
 .botao{

@@ -22,8 +22,8 @@
                     <a href="index.php"><img src="./assets/images/logo rd (1).png" alt=""></a>
                 </div>
                 <li><a href="./php/personalize.php">Personalize</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#">ZL Tech</a></li>
+                <li><a href="#myCarousel">Sobre</a></li>
+                <li><a href="http://zltech.freesite.online/?i=1"target="_blank">ZL Tech</a></li>
                 <li> <a href="./php/cadastro.php">Cadastrar</a></li>
                 <li><a href="./php/login.php">Entrar</a></li>
             </ul>
@@ -31,114 +31,137 @@
         </nav>
     </header>
     <main>
-        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                <!-- <img src="./assets/images/fundo_roxo.jpg" alt="" width="100%" height="100%"> -->
-                <div class="container">
-                  <div class="carousel-caption text-start">
-                    <span class="color-word">Crie um site </span><span> para sua loja com nosso</span> <span class="color-word">layout </span> <span> predefinido</span>
-                    </span>  
-                    <p class="opacity-75"></p>
-                    <p><a class="btn btn-lg btn-primary" href="./php/cadastro.php">Cadastre-se</a></p>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row align-items-center justify-content-center vw-75">
+                  <div class="col-md-6 text-start">
+                    <span class="color-word">Crie um site </span>
+                    <span style="color:white"> para sua loja com nosso</span>
+                    <span class="color-word">layout </span> 
+                    <span style="color:white"> predefinido</span>
+                    <p><a class="btn btn-lg btn-primary mt-3" href="./php/personalize.php">Personalize</a></p>
                   </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                <!-- <img src="./assets/images/fundo_roxo.jpg" alt="" srcset="" width="100%" height="100%"> -->
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1></h1>
-                    <span class="color-word">Disponível em </span> <span>todos os dispositivos, como </span><span class="color-word"> celular e desktop</span>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                <!-- <img src="./assets/images/fundo_roxo.jpg" alt="" srcset="" width="100%" height="100%"> -->
-                <div class="container">
-                  <div class="carousel-caption text-end">
-                    <!-- <h1>One more for good measure.</h1> -->
-                    <span class="color-word">Melhore a divulgação</span> <span>da sua loja com nosso </span><span class="color-word">suporte </span> <span>e </span><span class="color-word"> rede da comunidade</span>
-                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                 
+                  <div class="col-md-6 text-end">
+                    <img src="./assets/images/telacel11.png" alt="" style="width:700px;">
                   </div>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
 
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row align-items-center justify-content-center vw-75">
+                  
+                  <div class="col-md-6 text-start">
+                    <span class="color-word">Disponível em</span>
+                    <span style="color:white"> todos os dispositivos, como</span>
+                    <span class="color-word">celular e desktop </span> 
+                    <p><a class="btn btn-lg btn-primary mt-3" href="./php/cadastro.php">Cadastre-se</a></p>
+                  </div>
+                  
+                  <div class="col-md-6 text-end">
+                    <img src="./assets/images/telacel33.png" alt="" style="width:700px;">
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-              <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-                      id="bd-theme"
-                      type="button"
-                      aria-expanded="false"
-                      data-bs-toggle="dropdown"
-                      aria-label="Toggle theme (auto)">
-                <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="assets/images/icons.svg#circle-half"></use></svg>
-                <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-                <li>
-                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="assets/images/icons.svg#sun-fill"></use></svg>
-                    Light
-                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="assets/images/icons.svg#check2"></use></svg>
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="assets/images/icons.svg#moon-stars-fill"></use></svg>
-                    Dark
-                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="assets/images/icons.svg#check2"></use></svg>
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-                    <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="assets/images/icons.svg#circle-half"></use></svg>
-                    Auto
-                    <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="assets/images/icons.svg#check2"></use></svg>
-                  </button>
-                </li>
-              </ul>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row align-items-center justify-content-center vw-75">
+
+                  <div class="col-md-6 text-start">
+                    <span class="color-word">Melhore a divulgação</span>
+                    <span style="color:white"> da sua loja com nosso</span>
+                    <span class="color-word">suporte e rede da comunidade </span> 
+                    <p><a class="btn btn-lg btn-primary mt-3" href="./php/login.php">Entrar</a></p>
+                  </div>
+               
+                  <div class="col-md-6 text-end">
+                    <img src="./assets/images/telacel22.png" alt="" style="width:700px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                  id="bd-theme"
+                  type="button"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                  aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="assets/images/icons.svg#circle-half"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="assets/images/icons.svg#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="assets/images/icons.svg#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="assets/images/icons.svg#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="assets/images/icons.svg#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="assets/images/icons.svg#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="assets/images/icons.svg#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+
 
 
         <section id="sobre">
             <h1>Alavanque suas vendas</h1>
-            <span>Crie seus próprios layouts</span>
-            <img src="./assets/images/logo rd (1).png" alt="">
+            <p style="font-size:25px">Crie seus próprios layouts</p>
+            <img src="./assets/images/mk_imports.jpg" alt="">
             <h2>Divulgue sua empresa</h2>
-            <span>Cresça no mercado digital</span>
-            <span></span>
-            <button type="submit">Saiba mais</button>
+            <p style="font-size: 25px;">Cresça no mercado digital</p>
+            <div class="logo">
+              <span><img src="./assets/images/logo rd (1).png" alt=""></span>
+            </div>
+            <a href="./php/login.php">Faça login</a>
         </section>
     </main>
     <footer class="rodape">
             <div class="empresa">
                 <span>Sobre</span>
-                <span>ZL Tech</span>
+                <span> <a href="http://zltech.freesite.online/?i=1"> ZL Tech </a></span>
             </div>
             <div class="redes-sociais">
                 <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
                 <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-github"></i></a></span>
+                <span><a href="https://github.com/ZLTech2"><i class="fa-brands fa-github"></i></a></span>
                 <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
                 <!-- <div class="botao">
                     <button>Entre em contato</button>

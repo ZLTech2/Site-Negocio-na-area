@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../bootstrap-5.3.3-examples/carousel/carousel.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/images/logo rd (1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/logo rd (1).png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -24,58 +24,52 @@
     </header>
     <main>
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                <!-- <img src="./assets/images/fundo_roxo.jpg" alt="" width="100%" height="100%"> -->
-                <div class="container">
-                  <div class="carousel-caption text-start">
-                    <span class="color-word">Crie um site </span><span> para sua loja com nosso</span> <span class="color-word">layout </span> <span> predefinido</span>
-                    </span>  
-                    <p class="opacity-75"></p>
-                    <p><a class="btn btn-lg btn-primary" href="./php/cadastro.php">Cadastre-se</a></p>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row align-items-center justify-content-center vw-75">
+                  <div class="col-md-6 text-start">
+                    <span class="color-word">Crie um site </span>
+                    <span style="color:white"> para sua loja com nosso</span>
+                    <span class="color-word">layout </span> 
+                    <span style="color:white"> predefinido</span>
+                    <p><a class="btn btn-lg btn-primary mt-3" href="./login.php">Faça login</a></p>
+                  </div>
+                 
+                  <div class="col-md-6 text-end">
+                    <img src="../assets/images/telacel11.png" alt="" style="width:900px;">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-        <!-- <section id="slideshow">
-            <span id="slideshow-text">
-                <span class="color-word">Crie um site</span> para sua loja com nosso <span class="color-word">layout</span> pré definido
-            </span>
-            <img id="slideshow-image" src="./assets/images/logo rd (1).png" alt="">
-        </section> -->
+          </div>
         
 
         <section id="sobre">
-            <h1>Alavanque suas vendas</h1>
             <span>Crie seus próprios layouts</span>
-            <img src="./assets/images/logo rd (1).png" alt="">
-            <h2>Divulgue sua empresa</h2>
-            <span>Cresça no mercado digital</span>
-            <span></span>
-            <button type="submit">Saiba mais</button>
+            <span>Personalize seu site</span>
+            <img src="../assets/images/telacel33.png" alt="">
+            <a href="./cadastro.php">Saiba mais </a></button>
         </section>
-    
+        </main>
 
         <footer class="rodape">
             <div class="empresa">
                 <span>Sobre</span>
-                <span>ZL Tech</span>
+                <span> <a href="http://zltech.freesite.online/?i=1"> ZL Tech </a></span>
             </div>
             <div class="redes-sociais">
                 <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
                 <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-github"></i></a></span>
+                <span><a href="https://github.com/ZLTech2"><i class="fa-brands fa-github"></i></a></span>
                 <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
                 <!-- <div class="botao">
                     <button>Entre em contato</button>
                 </div> -->
             </div>
-            
         </footer>
-    </main>
+   
     
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
