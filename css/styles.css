@@ -193,8 +193,8 @@ html{
 }
 .botoes-flutuantes button{
    margin: 5px;
-   padding: 10px;
-   background-color: var(--cor-roxa);
+   padding: 10px;#d3d3d3
+   background-color: ;
    color: rgb(0, 0, 0);
    border: none;
    border-radius: 5px;
