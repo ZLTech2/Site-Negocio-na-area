@@ -64,9 +64,7 @@
                     </form>
                 </div>
             </div>
-
-
-            <li><a href="#" id="abrirPopupContato">Contato</a></li>
+            <!-- <li><a href="#" id="abrirPopupContato">Contato</a></li> -->
             <div class="popup" id="popupContato">
                 <div class="conteudo"> 
                     <form>
@@ -81,7 +79,7 @@
                         <button type="submit">Enviar</button>
                         <button id="cancelarContato">Cancelar</button>
                     </div>
-                    <!-- <div id="msg"></div> -->
+                    <div id="msg"></div>
                 </form> 
             </div>
 

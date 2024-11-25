@@ -16,7 +16,7 @@
                 </div>
                 <li><a href="./personalize.php">Personalize</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="https://zltech2.github.io/Site-ZL-Tech/">ZL Tech</a></li>
+                <li><a href="http://zltech.freesite.online/?i=1">ZL Tech</a></li>
                 <li> <a href="./cadastro.php">Cadastrar</a></li>
                 <li><a href="./login.php">Entrar</a></li>
             </ul>

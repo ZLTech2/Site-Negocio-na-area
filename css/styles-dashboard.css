@@ -51,7 +51,7 @@ header{
    transform: translate(-50%, -50%);
    border-radius: 30px;
    width: 50%;
-   height: 70vh;
+   height: 90vh;
    z-index: 1000;
  }
 
@@ -162,7 +162,7 @@ header{
  
 .plano{
    background-color: rgb(94, 94, 94);
-   height: 35vh;
+   height: 45vh;
    width: 100%;
    border-radius: 30px;
    display: flex;
@@ -186,7 +186,7 @@ i{
    width:25%;
    border-radius: 50%;
    position: relative;
-   top: 80%;
+   top: 70%;
    transform: translate(-50%, -50%);
    left: 50%;
    display: flex;
@@ -200,7 +200,7 @@ i{
    justify-content: center;
    align-items: center;
    position: relative;
-   top: 40%;
+   top: 50%;
    flex-direction: column;
 }
 

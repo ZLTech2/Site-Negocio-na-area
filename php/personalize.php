@@ -44,8 +44,6 @@
             </div>
           </div>
           </div>
-        
-
         <section id="sobre">
             <span>Crie seus próprios layouts</span>
             <span>Personalize seu site</span>

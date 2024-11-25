@@ -23,15 +23,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <ul class="nav-list">
                 <div class="logo">
-                    <a href="../index.php"><img src="../assets/images/logo rd (1).png" alt=""></a>
+                    <a href="../index.php"> <img src="../assets/images/logo rd (1).png" alt=""></a>
                 </div>
                 <li><a href="./personalize.php">Personalize</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="https://zltech2.github.io/Site-ZL-Tech/">ZL Tech</a></li>
+                <li><a href="http://zltech.freesite.online/?i=1">ZL Tech</a></li>
                 <li> <a href="./cadastro.php">Cadastrar</a></li>
                 <li><a href="./login.php">Entrar</a></li>
             </ul>

@@ -139,7 +139,14 @@
           </ul>
         </div>
 
-
+        <div class="botoes-flutuantes">
+        <button id="read-text">Ler texto</button>
+          <div class="botoes-fala">
+          
+            <button id="pause"><i class="fa-solid fa-pause"></i></button>
+            <button id="resume"><i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
 
         <section id="sobre">
             <h1>Alavanque suas vendas</h1>

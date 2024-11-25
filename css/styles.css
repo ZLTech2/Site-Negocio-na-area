@@ -97,7 +97,7 @@ html{
 
 #sobre img{
    margin-top: 20px;
-   width: 80%;
+   width: 70%;
    border: solid 1px;
    box-shadow: 1px 1px 5px 2px;
 }
@@ -179,6 +179,31 @@ html{
 .botao{
    display: flex;
    /* flex-direction: column; */
+}
+
+.botoes-flutuantes{
+   position: fixed;
+  bottom: 10px;
+  z-index: 1000;
+}
+
+
+.botoes-fala i{
+   text-align: center;
+}
+.botoes-flutuantes button{
+   margin: 5px;
+   padding: 10px;
+   background-color: var(--cor-roxa);
+   color: rgb(0, 0, 0);
+   border: none;
+   border-radius: 5px;
+   text-transform: uppercase;
+}
+
+.botoes-flutuantes button:hover{
+   color: var(--cor-amarela);
+   transition: 0.4s ease;
 }
 
 /* .dropdown{
