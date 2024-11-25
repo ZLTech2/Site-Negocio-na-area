@@ -9,32 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cnpj = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
         return cnpj;
     }
-
-    const readButton = document.getElementById('read-text');
-    const pauseButton = document.getElementById('pause');
-    const resumeButton = document.getElementById('resume');
-
-    readButton.addEventListener('click',()=>{
-  
-    const text = document.body.innerText;
-    const speech = new SpeechSynthesisUtterance(text);
-    speech.lang = 'pt-BR';
-    window.speechSynthesis.speak(speech);
-});
-
-pauseButton.addEventListener('click',()=>{
-    if(speechSynthesis.speaking){
-        speechSynthesis.pause();
-    }
-})
-
-resumeButton.addEventListener('click',()=>{
-    if(speechSynthesis.paused){
-        speechSynthesis.resume();
-    }
-});
-
-
+    
     const cnpj = document.getElementById('cnpj')
     cnpj.addEventListener('input',function(){
         this.value = mascaraCNPJ(this.value);

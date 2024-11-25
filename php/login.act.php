@@ -17,7 +17,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
 
         // verificar se a senha fornecida corresponde ao hash armazenado
         if (password_verify($senha, $cliente['senha'])) {
-
+            
             $_SESSION['logado'] = true;
             $_SESSION['nome_empresa'] = $cliente['nome_empresa'];
             $_SESSION['email'] = $cliente['email'];
