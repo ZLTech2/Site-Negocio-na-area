@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmarSenha = document.getElementById('confirmar_senha');
     const msgElement = document.getElementById('msg');
 
+
     function mascaraCNPJ(cnpj){
         cnpj = cnpj.replace(/\D/g,'');
         cnpj = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');
@@ -67,6 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const hamburguer = document.getElementById('hamburguer');
+const menu = document.getElementById('menu');
+
+hamburguer.addEventListener('click',()=>{
+    menu.classList.toggle('show');
+});
+
 
 document.getElementById('formContato').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -93,4 +101,3 @@ document.getElementById('formContato').addEventListener('submit', function(event
         document.getElementById('msg').innerText = 'Ocorreu um erro ao enviar o formulário';
     });
 });
-

@@ -17,16 +17,23 @@
 <body>
     <header>
         <nav>
-            <ul class="nav-list">
+          <div class="nav-list">
                 <div class="logo">
                     <a href="index.php"><img src="./assets/images/logo rd (1).png" alt=""></a>
                 </div>
-                <li><a href="./php/personalize.php">Personalize</a></li>
-                <li><a href="#myCarousel">Sobre</a></li>
-                <li><a href="http://zltech.freesite.online/?i=1"target="_blank">ZL Tech</a></li>
-                <li> <a href="./php/cadastro.php">Cadastrar</a></li>
-                <li><a href="./php/login.php">Entrar</a></li>
-            </ul>
+
+                <div class="hamburguer" id="hamburguer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+                <ul class="menu" id="menu">
+                  <li><a href="./php/personalize.php">Personalize</a></li>
+                  <li><a href="#myCarousel">Sobre</a></li>
+                  <li><a href="http://zltech.freesite.online/?i=1"target="_blank">ZL Tech</a></li>
+                  <li> <a href="./php/cadastro.php">Cadastrar</a></li>
+                  <li><a href="./php/login.php">Entrar</a></li>
+              </ul>
             </div>
         </nav>
     </header>

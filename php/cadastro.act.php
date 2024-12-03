@@ -20,9 +20,13 @@ $cnpj = $_POST['cnpj'];
 $hash = password_hash($senha, PASSWORD_ARGON2ID);
 $response = [];
 
+if(isset($_POST['nome_empresa'])){
+    if(empty($_POST['nome_empresa'])){
+        die(json_encode(['status'=> 'error','msg'=> 'O nome da empresa não pode estar vazio']));
+    }
+}
 
 if(isset($_POST['email'])){
-    // $cnpj = preg_replace('/\D/', '', $cnpj);
     if(empty($_POST['email'])){
         die(json_encode(["status"=> "error","msg"=> "O email não pode estar vazio"]));
     }
@@ -34,7 +38,6 @@ if(isset($_POST['email'])){
 }
 
 if(isset($_POST['cnpj'])){
-    // $cnpj = preg_replace('/\D/', '', $cnpj);
     if(empty($_POST['cnpj'])){
         die(json_encode(["status"=> "error","msg"=> "O CNPJ não pode estar vazio"]));
     }
