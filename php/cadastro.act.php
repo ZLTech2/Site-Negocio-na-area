@@ -30,8 +30,12 @@ if(isset($_POST['email'])){
     if(empty($_POST['email'])){
         die(json_encode(["status"=> "error","msg"=> "O email não pode estar vazio"]));
     }
-    $sql = "SELECT * FROM clientes WHERE email = '$email'";
-    $result = mysqli_query($con,$sql);
+        $sql = "SELECT * FROM clientes WHERE email = ?";
+        $stmt = $con->prepare($sql);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
     if($result && mysqli_num_rows($result)>0){
         die(json_encode(["status" => "error", "msg" => "O email já existe"]));   
     }
@@ -41,13 +45,16 @@ if(isset($_POST['cnpj'])){
     if(empty($_POST['cnpj'])){
         die(json_encode(["status"=> "error","msg"=> "O CNPJ não pode estar vazio"]));
     }
-    $sql = "SELECT * FROM clientes WHERE cnpj = '$cnpj'";
-    $result = mysqli_query($con,$sql);
+        $sql = "SELECT * FROM clientes WHERE cnpj = ?";
+        $stmt = $con->prepare($sql);
+        $stmt->bind_param("s", $cnpj);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
     if($result && mysqli_num_rows($result)>0){
         die(json_encode(["status" => "error", "msg" => "O CNPJ já existe"]));   
     }
 }
-
 
 $stmt = $con->prepare("INSERT INTO clientes (nome_empresa,email, cnpj, senha) VALUES (?, ?, ?, ?)");
 $stmt->bind_param("ssss", $nome_empresa, $email, $cnpj, $hash);

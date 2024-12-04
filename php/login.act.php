@@ -8,9 +8,13 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     $senha = $_POST['senha'];
 
     // consultar o banco de dados para buscar o usuário pelo email
-    $sql = "SELECT * FROM clientes WHERE email = '$email'";
-    $resultado = mysqli_query($con, $sql);
 
+        $sql = "SELECT * FROM clientes WHERE email = ?";
+        $stmt = $con->prepare($sql);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+
+        $resultado = $stmt->get_result();
     // verifica se o usuário foi encontrado
     if ($resultado && mysqli_num_rows($resultado) === 1) {
         $cliente = mysqli_fetch_assoc($resultado);
